@@ -23,7 +23,7 @@ if jogador == 0:
         print(f"!!VOCÊ GANHOU!! \n A maquina fez {opcoes[maquina]} \n Você fez {opcoes[jogador]}")
 
 # Validador Papel
-if jogador == 1:
+elif jogador == 1:
     if maquina == 1:
         print(f"EMPATE!! \n A maquina fez {opcoes[maquina]} \n Você fez {opcoes[jogador]}")
     elif maquina == 2:
@@ -32,7 +32,7 @@ if jogador == 1:
         print(f"!!VOCÊ GANHOU!! \n A maquina fez {opcoes[maquina]} \n Você fez {opcoes[jogador]}")
 
 # Validador Tesoura
-if jogador == 2:
+elif jogador == 2:
     if maquina == 2:
         print(f"EMPATE!! \n A maquina fez {opcoes[maquina]} \n Você fez {opcoes[jogador]}")
     elif maquina == 0:
