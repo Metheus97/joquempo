@@ -3,6 +3,33 @@
 
 # Bibliotecas
 import random
+import pygame
+from pygame.locals import *
+from sys import exit
+
+# Abrir janela do jogo
+pygame.init()      # Inicializa o pygame
+
+screen_width=700
+screen_height=400
+tela = screen=pygame.display.set_mode([screen_width, screen_height])
+pygame.display.set_caption('Super Joquempo')
+
+# Loop do jogo
+while True:
+    for event in pygame.event.get():
+        if event.type == QUIT:
+            pygame.quit()
+            exit()
+
+    pygame.draw.rect(tela, (255, 255, 255), (175, 300, 350, 40))
+
+
+    pygame.display.update()
+
+
+
+
 
 opcoes = ["Pedra", "Papel", "Tesoura"]   # Lista com as opções do jogo
 
